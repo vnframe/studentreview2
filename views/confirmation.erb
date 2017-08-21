@@ -1,5 +1,6 @@
 <%topping.each do |value|%>
 <form method="post" action = "/confirmation">
-<p><input type="checkbox" value="<%= value%>" name = "topping"><%=value%></p>
+<p><input type="checkbox" value= <%= value%> name = "topping[]"><%=value%></p>
 <%end%>
 <center> <input type = "submit"> <center>
+</form>
